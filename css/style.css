@@ -3,3 +3,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 span.custom-margin {
     margin: 2px;
 }
+
+@media only screen and (max-width: 600px) {
+    span.page-nav {
+      font-size: 0;
+    }
+  }
