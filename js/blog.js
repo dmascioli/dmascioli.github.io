@@ -17,6 +17,11 @@ function convert_md() {
             if(httpRequest.status === 200) {
                 // if successful, show the response
                 text = httpRequest.responseText
+                target = document.getElementById('test1'),
+                    converter = new showdown.Converter(),
+                    html = converter.makeHtml(text);
+                
+                target.innerHTML = html;
             } else {
                 // otherwise, oh no...
                 alert('There was a problem with the request.')
@@ -24,9 +29,5 @@ function convert_md() {
         }
     }
 
-    target = document.getElementById('test1'),
-        converter = new showdown.Converter(),
-        html = converter.makeHtml(text);
     
-    target.innerHTML = html;
 }
