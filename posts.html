@@ -1,3 +1,8 @@
+---
+
+---
+
+
 <!DOCTYPE html>
 <html>
 <title>Darren Mascioli</title>
@@ -12,18 +17,48 @@
     <!-- Nav Bar -->
     <div class="w3-bar w3-light-grey">
         <a href="index.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-home"></i></a>
-        <a href="projects.html" class="w3-bar-item w3-button w3-blue-grey"><i class="fa fa-book"></i><span class="page-nav"> Projects</span></a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-book"></i><span class="page-nav"> Projects</span></a>
         <a href="education.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-graduation-cap"></i><span class="page-nav"> Education</span></a>
-        <a href="posts.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-pencil"></i><span class="page-nav"> Posts</span></a>
-        
+        <a href="posts.html" class="w3-bar-item w3-button w3-blue-grey"><i class="fa fa-pencil"></i><span class="page-nav"> Posts</span></a>
+
         <a href="https://www.instagram.com/dmas97/" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-instagram w3-hover-opacity"></i></a>
         <a href="https://www.github.com/dmascioli" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-github w3-hover-opacity"></i></a>
         <a href="https://www.linkedin.com/in/darrenmascioli" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
 
     <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    	<h1>Coming Soon!</h1>
+    <div id="blog_container" class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        
+            {% for post in site.categories.posts %}
+            <div class="w3-row-padding w3-margin-bottom">
+                <div class="w3-white w3-card">
+                    <div class=w3-container>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </div>
+                </div>
+            </div>
+            
+            {% endfor %}
+        
+        <!--
+    	<div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-white w3-card">
+                <div id="test1" class=w3-container>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-white w3-card">
+                <div id="test2" class=w3-container>
+                    
+                </div>
+            </div>
+        </div>
+        -->
+
     </div>
 
     <footer class="w3-container w3-blue-grey w3-center w3-margin-top">
