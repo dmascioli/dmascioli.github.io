@@ -1,3 +1,8 @@
+---
+
+---
+
+
 <!DOCTYPE html>
 <html>
 <title>Darren Mascioli</title>
@@ -6,26 +11,37 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
-<script src="js/blog.js"></script>
+<link rel="stylesheet" href="/css/style.css">
 
 <body class="w3-dark-grey">
     <!-- Nav Bar -->
     <div class="w3-bar w3-light-grey">
-        <a href="index.html" class="w3-bar-item w3-button w3-blue-grey"><i class="fa fa-home"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-home"></i></a>
         <a href="projects.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-book"></i><span class="page-nav"> Projects</span></a>
         <a href="education.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-graduation-cap"></i><span class="page-nav"> Education</span></a>
-        
+        <a href="posts.html" class="w3-bar-item w3-button w3-blue-grey"><i class="fa fa-pencil"></i><span class="page-nav"> Posts</span></a>
+
         <a href="https://www.instagram.com/dmas97/" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-instagram w3-hover-opacity"></i></a>
         <a href="https://www.github.com/dmascioli" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-github w3-hover-opacity"></i></a>
         <a href="https://www.linkedin.com/in/darrenmascioli" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
 
     <!-- Page Container -->
-    <div id="blog_container" onload="load_blog()" class="w3-content w3-margin-top" style="max-width:1400px;">
+    <div id="blog_container" class="w3-content w3-margin-top" style="max-width:1400px;">
 
+        
+            {% for post in site.categories.posts %}
+            <div class="w3-row-padding w3-margin-bottom">
+                <div class="w3-white w3-card">
+                    <div class=w3-container>
+                        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                    </div>
+                </div>
+            </div>
+            
+            {% endfor %}
+        
+        <!--
     	<div class="w3-row-padding w3-margin-bottom">
             <div class="w3-white w3-card">
                 <div id="test1" class=w3-container>
@@ -41,14 +57,11 @@
                 </div>
             </div>
         </div>
-
+        -->
 
     </div>
 
-    <footer class="w3-container w3-blue-grey w3-center w3-margin-top">
-        <p class="w3-left w3-small">Copyright &copy; 2019 Darren Mascioli</p>
-        <p class="w3-right w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
+    {% include footer.html %}
 
 </body>
 

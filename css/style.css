@@ -8,4 +8,20 @@ span.custom-margin {
     span.page-nav {
       font-size: 0;
     }
-  }
+}
+
+body {
+  margin-bottom: 80px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}  
+
+code {
+  background-color: whitesmoke;
+  
+}
