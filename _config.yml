@@ -59,3 +59,29 @@ jekyll_analytics:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+collections:
+  courses:
+    output: true
+    permalink: /courses/:path/
+    order: 
+      - cs441.md
+      - cs445.md
+     # - coe147.md
+     # - coe449.md
+     # - coe501.md
+     # - coe1502.md
+     # - coe1541.md
+     # - coe1501.md
+     # - coe1520.md
+     # - cs1550.md
+     # - cs1632.md
+     # - coe1530.md
+     # - cs1555.md
+     # - cs1656.md
+     # - ece202.md
+     # - cs1621.md
+     # - cs1699.md
+     # - ece1150.md
+     # - ece1896.md
