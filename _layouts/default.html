@@ -9,21 +9,17 @@
 <link rel="stylesheet" href="/css/style.css">
     
     <body class="w3-dark-grey">
-        <!-- Nav Bar -->
-        <div class="w3-bar w3-light-grey">
-            <a href="index.html" class="w3-bar-item w3-button w3-blue-grey"><i class="fa fa-home"></i></a>
-            <a href="projects.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-book"></i><span class="page-nav"> Projects</span></a>
-            <a href="education.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-graduation-cap"></i><span class="page-nav"> Education</span></a>
-            <a href="posts.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-pencil"></i><span class="page-nav"> Posts</span></a>
-    
-            <a href="https://www.instagram.com/dmas97/" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="https://www.github.com/dmascioli" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-github w3-hover-opacity"></i></a>
-            <a href="https://www.linkedin.com/in/darrenmascioli" target="_blank" class="w3-bar-item w3-button w3-light-grey w3-right"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        {% include navbar.html %}
+
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+            <div class="w3-container w3-card-3 w3-white w3-text-grey w3-margin">
+                {{ content }}
+            </div>
+           
         </div>
+        
 
-    {{ content }}
-
-    {% include footer.html %}
+        {% include footer.html %}
 
 </body>
 
