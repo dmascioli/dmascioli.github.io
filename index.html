@@ -60,57 +60,25 @@
 
                         <p class="w3-large"><b><i
                                     class="fa fa-code fa-fw w3-margin-right w3-text-blue-grey"></i>Languages</b></p>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Java</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">C</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">C#</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">JavaScript</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">HTML</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">CSS</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Python</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">VHDL</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">MIPS Assembly</span>
+                        {% include tags/home/languages.html %}
                         <br><hr>
 
                         <p class="w3-large w3-text-theme"><b><i
                                     class="fa fa-wrench fa-fw w3-margin-right w3-text-blue-grey"></i>Tools and
                                 Technologies</b></p>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Visual Studio</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Eclipse</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Git</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">SVN</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Jira</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">JUnit</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Selenium</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">HDL Designer</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Modelsim</span>
+                        {% include tags/home/tools.html %}
                         <br><hr>
 
                         <p class="w3-large w3-text-theme"><b><i
                                     class="fa fa-laptop fa-fw w3-margin-right w3-text-blue-grey"></i>Operating Systems
                                 and Communications</b></p>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Windows 10</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Windows 7</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Ubuntu</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Debian</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Embedded Round Robin</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">RTOS</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">ThreadX</span>
-
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">I2C</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">SPI</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">1-Wire</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Modbus</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">UART</span>
+                        {% include tags/home/os_comm.html %}
                         <br><hr>
 
                         <p class="w3-large w3-text-theme"><b><i
                                     class="fa fa-microchip fa-fw w3-margin-right w3-text-blue-grey"></i>Hardware
                                 Skills</b></p>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">THT Soldering</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">SMD Soldering</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Digital Multimeter</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Oscilloscope</span>
-                        <span class="w3-tag w3-light-grey w3-round custom-margin">Logic Analyzers</span>
+                        {% include tags/home/hw.html %}
                         <br>
 
                         <br>
@@ -166,14 +134,16 @@
                         Experience
                     </h2>
 
-                    <div class="w3-container w3-text-grey accordian" data-toggle="collapse"
-                        data-target="#intern_projects">
-                        <h4 class="w3-text-grey"><b>Embedded Software Engineering Co-Op</b></h5>
+                    <div class="w3-container w3-text-grey accordian" >
+                        <h4 class="w3-text-grey"><b>Embedded Software Engineering Co-Op</b></h4>
+                            
                             <h5 class="w3-text-grey"><em>Bridge Fusion Systems</em></h5>
                             <h6 class="w3-text-blue-grey"><i class="fa fa-map-marker fa-fw w3-margin-right"></i>Plum, PA
                             </h6>
+                            <i class="w3-button w3-round w3-light-grey w3-right fa fa-angle-down w3-hover-opacity" data-toggle="collapse" data-target="#intern_projects"></i>
                             <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 -
                                 <span class="w3-tag w3-blue-grey w3-round">Current</span></h6>
+                                
                             <div class="collapse" id="intern_projects">
                                 <p>
                                 <h6><b>Mosebach Manufacturing Company</b></h6>
@@ -303,43 +273,12 @@
                             <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2016 -
                                 Dec 2020</h6>
                             <b class="w3-text-grey">GPA: </b>3.80 <br>
-                            <div class="accordian" data-toggle="collapse" data-target="#courses" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                <b class="w3-text-grey">Coursework:</b> (click to expand) <br>
+                            <i class="w3-button w3-round w3-light-grey w3-right fa fa-angle-down w3-hover-opacity" data-toggle="collapse" data-target="#courses"></i>
+                            <div class="accordian">
+                                <b class="w3-text-grey">Coursework:</b><br>
 
                                 <div class="collapse" id="courses">
-                                    <p>Green indicates in progress</p>
-                                    <span class="w3-tag w3-light-green w3-round custom-margin">Senior Design</span>
-                                    <span class="w3-tag w3-light-green w3-round custom-margin">Computer Networks</span>
-                                    <span class="w3-tag w3-light-green w3-round custom-margin">Practical AI</span>
-                                    <span class="w3-tag w3-light-green w3-round custom-margin">Structure of Programming
-                                        Languages</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Database Management
-                                        Systems</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Software
-                                        Engineering</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Intro to Data
-                                        Science</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Algorithm
-                                        Implementation</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Operating Systems</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Software Quality
-                                        Assurance</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Advanced Digital
-                                        Design</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Computer
-                                        Architecture</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Data Structures</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Web Applications</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Digital Logic</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Computer
-                                        Organization</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Systems Software</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Electronic Circuits and
-                                        Systems</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Digital Systems Lab</span>
-                                    <span class="w3-tag w3-light-grey w3-round custom-margin">Written Professional
-                                        Communications</span>
+                                    {% include tags/home/courses.html %}
                                 </div>
                             </div>
                     </div>
