@@ -25,8 +25,8 @@ title: Education
       <div class="w3-container" id="courses">
 
         {% for course in site.courses %}
-        <div class="w3-quarter course-card">
-          <div class="w3-margin w3-card-4">
+        <div class="w3-quarter">
+          <div class="w3-margin w3-card-4 course-card w3-display-container">
             
             <header class="w3-container w3-light-grey ">
               <h4 class="w3-margin-top course-header">{{course.title}}</h4>
@@ -38,7 +38,7 @@ title: Education
               <p>{{course.description}}</p>
             </div>
 
-            <button class="w3-button w3-block w3-dark-grey">View Details</button>
+            <a href="{{course.url}}"><button class="w3-button w3-block w3-dark-grey w3-display-bottommiddle">View Details</button></a>
           </div>
         </div>
 

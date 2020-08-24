@@ -22,17 +22,17 @@ body {
   text-align: center; 
 }  
 
-code {
-  background-color: whitesmoke;
-  
-}
 
 .course-card {
-  min-height: 22em;
+  min-height: 35vh;
 }
 
 .course-header {
   overflow: hidden;
   display: inline-block;
   max-lines: 1;
+}
+
+a.post-links {
+  text-decoration: none;
 }

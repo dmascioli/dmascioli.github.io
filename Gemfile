@@ -33,3 +33,5 @@ gem 'jekyll-seo-tag'
 
 # Analytics
 gem 'jekyll-analytics'
+
+gem 'jekyll-compose', group: [:jekyll_plugins]
