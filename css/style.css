@@ -36,3 +36,11 @@ body {
 a.post-links {
   text-decoration: none;
 }
+
+.expand-image {
+  transition: .3s;
+}
+.expand-image:hover {
+  width: 100%;
+  transition: .3s;
+}

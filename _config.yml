@@ -65,6 +65,13 @@ collections:
       - coe449.md
       - coe501.md
 
+defaults:
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "course"
+
 
       
       
