@@ -23,18 +23,19 @@
 
             {% for post in site.categories.posts %}
             <a href="{{post.url}}" class="post-links">
-            <div class="w3-white w3-block w3-button w3-margin w3-card-4">
-                <div class="w3-left-align">
-                    <time datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_string: "ordinal", "US" }}</time>
-                    <h1>{{post.title}}</h1>
+                <div class="w3-white w3-block w3-button w3-margin w3-card-4">
+                    <div class="w3-left-align">
+                        <time
+                            datetime="{{ post.date | date: "%m-%d-%Y" }}">{{ post.date | date_to_string: "ordinal", "US" }}</time>
+                        <h1>{{post.title}}</h1>
+                    </div>
+
                 </div>
-                
-              </div>
             </a>
             {% endfor %}
 
         </div>
-      
+
         <!--
     	<div class="w3-row-padding w3-margin-bottom">
             <div class="w3-white w3-card">

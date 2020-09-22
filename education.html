@@ -23,11 +23,11 @@ title: Education
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
     <div class="w3-container w3-card-3 w3-white w3-text-grey w3-margin">
       <div class="w3-container" id="courses">
-
+        <br>
         {% for course in site.courses %}
         <div class="w3-quarter">
           <div class="w3-margin w3-card-4 course-card w3-display-container">
-            
+
             <header class="w3-container w3-light-grey ">
               <h4 class="w3-margin-top course-header">{{course.title}}</h4>
             </header>
@@ -43,7 +43,9 @@ title: Education
         </div>
 
         {% endfor %}
+
       </div>
+      <br>
     </div>
   </div>
   </div>
