@@ -10,17 +10,19 @@
 {% include bootstrap.html %}
 
 <link rel="stylesheet" href="/css/style.css">
-    
-    <body class="w3-dark-grey">
+
+{% include head.html %}
+
+<body class="w3-dark-grey">
         {% include navbar.html %}
 
         <div class="w3-content w3-margin-top" style="max-width:1400px;">
-            
+
                 {{ content }}
-            
-           
+
+
         </div>
-        
+
 
         {% include footer.html %}
 

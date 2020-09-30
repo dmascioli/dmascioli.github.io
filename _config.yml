@@ -1,10 +1,10 @@
 title: Darren Mascioli
 email: darren.mascioli@pitt.edu
 description: >- # this means to ignore newlines until "baseurl:"
-    Aspiring Embedded Systems Engineer and Computer Engineering student at the University of Pittsburgh 
+  Aspiring Embedded Systems Engineer and Computer Engineering student at the University of Pittsburgh
 baseurl: ""
 url: "dmascioli.github.io"
-github_username:  dmascioli
+github_username: dmascioli
 instagram_username: dmas97
 linkedin_username: darrenmascioli
 
@@ -14,56 +14,13 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-analytics
 
-jekyll_analytics:
-  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: UA-175358884-1          # Required - replace with your tracking id
-    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
+google_analytics: UA—179228084-1
 
 collections:
   courses:
     output: true
     permalink: /courses/:path/
-    order: 
-      - cs1621.md
-      - cs1699.md
-      - ece1896.md
-      - cs1550.md
-      - cs1632.md
-      - coe1530.md
-      - cs1555.md
-      - cs1656.md
-      - ece202.md
-      - coe1502.md
-      - coe1541.md
-      - coe1501.md
-      - coe1520.md
-      - cs445.md
-      - coe147.md
-      - coe449.md
-      - coe501.md
 
 defaults:
   - scope:
@@ -71,8 +28,3 @@ defaults:
       type: "courses"
     values:
       layout: "course"
-
-
-      
-      
-      
