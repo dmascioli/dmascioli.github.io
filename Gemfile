@@ -31,7 +31,4 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 # SEO tag
 gem 'jekyll-seo-tag'
 
-# Analytics
-gem 'jekyll-analytics'
-
 gem 'jekyll-compose', group: [:jekyll_plugins]
