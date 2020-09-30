@@ -1,7 +1,7 @@
 title: Darren Mascioli
 email: darren.mascioli@pitt.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Aspiring Embedded Systems Engineer and Computer Engineering student at the University of Pittsburgh
+  Aspiring Embedded Software Engineer and Computer Engineering student at the University of Pittsburgh
 baseurl: ""
 url: "dmascioli.github.io"
 github_username: dmascioli
@@ -14,6 +14,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 google_analytics: UA—179228084-1
 
