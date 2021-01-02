@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
-{%include head.html%}
+  {%include head.html%}
 
-<body class="w3-dark-grey">
+  <body class="w3-dark-grey">
     {% include navbar.html %}
 
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-        <div class="w3-white w3-card w3-margin">
-            <div class="w3-container w3-margin w3-padding-16">
-                {{ content }}
-            </div>
-        </div>
+    <div class="w3-content w3-margin-top" style="max-width: 1400px">
+      <div class="w3-white w3-card w3-margin">
+        <div class="w3-container w3-margin w3-padding-16">{{ content }}</div>
+      </div>
     </div>
 
     {% include footer.html %}
-
-</body>
-
+  </body>
 </html>
