@@ -1,0 +1,52 @@
+---
+permalink: /career
+layout: default
+---
+
+<div class="w3-content w3-display-container" style="max-width:100%; margin-top:20px; margin-bottom: 20px;">       
+    <img class="mySlides" src="/assets/career/Slide1.JPG" style="width:100%">
+    <img class="mySlides" src="/assets/career/Slide2.JPG" style="width:100%">
+    <img class="mySlides" src="/assets/career/Slide3.JPG" style="width:100%">
+    <img class="mySlides" src="/assets/career/Slide4.JPG" style="width:100%">
+    <img class="mySlides" src="/assets/career/Slide5.JPG" style="width:100%">
+    <img class="mySlides" src="/assets/career/Slide6.JPG" style="width:100%">
+    <img class="mySlides" src="/assets/career/Slide7.JPG" style="width:100%">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <br>
+    <button class="w3-button w3-black" onclick="downloadPresentation()">📥 Download PowerPoint</button>
+</div>
+<script>
+    var slideIndex = 1;
+    var isFullscreen = false;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+    }
+
+    function downloadPresentation() {
+    var link = document.createElement("a");
+    link.href = "/assets/career/career-presentation.pptx";
+    link.download = "career-presentation.pptx";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    }
+
+</script>
+
+
+  
